@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OpenLayers WFS Layer</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v6.5.0/css/ol.css" type="text/css">
+    <script src="https://openlayers.org/en/v6.5.0/build/ol.js"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <script>
+      var vectorSource = new ol.source.Vector({
+        format: new ol.format.WFS(),
+        url: function(extent) {
+          return 'https://geowebservices.stanford.edu/geoserver/wfs?service=WFS&' +
+                 'version=1.1.0&request=GetFeature&typename=druid:vx572wx7854&' +
+                 'outputFormat=application/json&srsname=EPSG:3857&' +
+                 'bbox=' + extent.join(',') + ',EPSG:3857';
+        },
+        strategy: ol.loadingstrategy.bbox
+      });
+
+      var vectorLayer = new ol.layer.Vector({
+        source: vectorSource
+      });
+
+      var map = new ol.Map({
+        layers: [new ol.layer.Tile({ source: new ol.source.OSM() }), vectorLayer],
+        target: 'map',
+        view: new ol.View({
+          center: ol.proj.fromLonLat([0, 0]),
+          zoom: 2
+        })
+      });
+    </script>
+  </body>
+</html>
