@@ -4,6 +4,8 @@ This repository contains script examples for modeling "Sample Code" for accessin
 
 Planet.com and Google Earth Engine auto-generate cut-and-paste code for immediate use of identified datasets of interest. 
 
+## Google Earth Engine Data Catalog Sample Code
+
 In this example, you see the sample code snippet for the FIRMS Fire dataset in Google Earth Engine:
 
 ![alt text](images/image.png)
@@ -27,3 +29,26 @@ If you have a Google Earth Engine Account, you can launch this sample code and r
 
 https://code.earthengine.google.com/?scriptPath=Examples:Datasets/FIRMS/FIRMS
 
+## Planet.com Explorer Sample Code
+
+Planet.com's Explorer application uses a "Shopping Cart" model for searching and selecting imagery for download. Once you have added images to your shopping cart...
+
+![alt text](images/image2.png)
+
+You can click on the `API{:}` button at the bottom of the search panel to reveal options for code-based layout, which are auto-generated, on-the-fly:
+
+![alt text](images/image3.png)
+
+which results in 3 options:
+
+1. Copy your API Key
+
+![alt text](images/image4.png)
+
+2. A Cut&Paste cURL command for downloading data directly (API key Obscured):
+
+![alt text](images/image5.png)
+
+3. or Item IDs, for cut&paste to R or Python Scripts:
+
+![alt text](images/image6.png)
