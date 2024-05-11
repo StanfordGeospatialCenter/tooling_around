@@ -4,6 +4,29 @@ This repository contains script examples for modeling "Sample Code" for accessin
 
 Planet.com and Google Earth Engine auto-generate cut-and-paste code for immediate use of identified datasets of interest. 
 
+### Cloud Optimized Geotiff from Stacks URL to Leaflet.js
+
+This example shows a cloud optimized geotiff, served from a stacks URL, displayed in a Leaflet Map:
+
+* [HTML document](https://github.com/StanfordGeospatialCenter/tooling_around/blob/e48188d08aa036fd32bdbd9868e8747cb18139b6/script_examples/cog_Leaflet.html)
+* [Live example](https://web.stanford.edu/~maples/earthworks/cog_Leaflet.html)
+
+### Geoserver WFS GeoJSON in Leaflet.js
+
+This example shows a GeoJSON file, served from Stanford's Geoserver, in a Leaflet.js Map:
+
+* [HTML document](https://github.com/StanfordGeospatialCenter/tooling_around/blob/e48188d08aa036fd32bdbd9868e8747cb18139b6/script_examples/clowns_Leaflet.html)
+* [Live example](https://web.stanford.edu/~maples/earthworks/clowns_Leaflet.html)
+
+### GeoJSON from Stacks URL in Leaflet.js
+
+This example show a GeoJSON file, loaded from a Stacks URL to Leaflet.js
+
+* HTML document
+* [Live example](https://web.stanford.edu/~maples/earthworks/stacks_clowns_Leaflet.html)
+
+
+# Other Sample Code Examples
 ## Google Earth Engine Data Catalog Sample Code
 
 In this example, you see the sample code snippet for the FIRMS Fire dataset in Google Earth Engine:
