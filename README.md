@@ -30,7 +30,7 @@ This example show a GeoJSON file, loaded from a Stacks URL to Leaflet.js
 This Colab Notebook shows examples of loading GeJSON from a Geoserver WFS, GeoJSON from a Stacks URL and loading a COG from a STACKS URL:
 
 * importsinPython.ipynb in Github
-* [Live importsinPython.ipynb in Colab](https://colab.research.google.com/drive/1BChnBeilRiW3acoU36iYnM_7hlxoQpkO?usp=sharing)
+* [Live importsinPython.ipynb in Colab](https://colab.research.google.com/github/StanfordGeospatialCenter/tooling_around/blob/main/script_examples/importsInPython.ipynb)
 
 
 # Other Sample Code Examples
