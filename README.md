@@ -8,7 +8,7 @@ Planet.com and Google Earth Engine auto-generate cut-and-paste code for immediat
 
 This example shows a cloud optimized geotiff, served from a stacks URL, displayed in a Leaflet Map:
 
-* [HTML document](https://github.com/StanfordGeospatialCenter/tooling_around/blob/e48188d08aa036fd32bdbd9868e8747cb18139b6/script_examples/cog_leaflet.html)
+* [HTML document](https://github.com/StanfordGeospatialCenter/tooling_around/blob/e48188d08aa036fd32bdbd9868e8747cb18139b6/script_examples/stacks_cog_leaflet.html)
 * [Live example](https://web.stanford.edu/~maples/earthworks/cog_leaflet.html)
 
 ### Geoserver WFS GeoJSON in Leaflet.js
