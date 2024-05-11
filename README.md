@@ -9,21 +9,21 @@ Planet.com and Google Earth Engine auto-generate cut-and-paste code for immediat
 This example shows a cloud optimized geotiff, served from a stacks URL, displayed in a Leaflet Map:
 
 * [HTML document](https://github.com/StanfordGeospatialCenter/tooling_around/blob/e48188d08aa036fd32bdbd9868e8747cb18139b6/script_examples/cog_Leaflet.html)
-* [Live example](https://web.stanford.edu/~maples/earthworks/cog_Leaflet.html)
+* [Live example](https://web.stanford.edu/~maples/earthworks/cog_leaflet.html)
 
 ### Geoserver WFS GeoJSON in Leaflet.js
 
 This example shows a GeoJSON file, served from Stanford's Geoserver, in a Leaflet.js Map:
 
 * [HTML document](https://github.com/StanfordGeospatialCenter/tooling_around/blob/e48188d08aa036fd32bdbd9868e8747cb18139b6/script_examples/clowns_Leaflet.html)
-* [Live example](https://web.stanford.edu/~maples/earthworks/clowns_Leaflet.html)
+* [Live example](https://web.stanford.edu/~maples/earthworks/wfs_clowns_leaflet.html)
 
 ### GeoJSON from Stacks URL in Leaflet.js
 
 This example show a GeoJSON file, loaded from a Stacks URL to Leaflet.js
 
 * [HTML document](https://github.com/StanfordGeospatialCenter/tooling_around/blob/250100ad158feac31dee4de472a403b3d2697dc6/script_examples/stacks_clowns_Leaflet.html)
-* [Live example](https://web.stanford.edu/~maples/earthworks/stacks_clowns_Leaflet.html)
+* [Live example](https://web.stanford.edu/~maples/earthworks/stacks_clowns_leaflet.html)
 
 ### Examples in Python Notebook
 
