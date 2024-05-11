@@ -22,8 +22,15 @@ This example shows a GeoJSON file, served from Stanford's Geoserver, in a Leafle
 
 This example show a GeoJSON file, loaded from a Stacks URL to Leaflet.js
 
-* HTML document
+* [HTML document](https://github.com/StanfordGeospatialCenter/tooling_around/blob/250100ad158feac31dee4de472a403b3d2697dc6/script_examples/stacks_clowns_Leaflet.html)
 * [Live example](https://web.stanford.edu/~maples/earthworks/stacks_clowns_Leaflet.html)
+
+### Examples in Python Notebook
+
+This Colab Notebook shows examples of loading GeJSON from a Geoserver WFS, GeoJSON from a Stacks URL and loading a COG from a STACKS URL:
+
+* importsinPython.ipynb in Github
+* [Live importsinPython.ipynb in Colab](https://colab.research.google.com/drive/1BChnBeilRiW3acoU36iYnM_7hlxoQpkO?usp=sharing)
 
 
 # Other Sample Code Examples
