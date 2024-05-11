@@ -65,7 +65,7 @@ Planet.com's Explorer application uses a "Shopping Cart" model for searching and
 
 ![alt text](images/image2.png)
 
-You can click on the `API{:}` button at the bottom of the search panel to reveal options for code-based layout, which are auto-generated, on-the-fly:
+You can click on the `API{:}` button at the bottom of the search panel to reveal options for code-based loading, which are auto-generated, on-the-fly:
 
 ![alt text](images/image3.png)
 
