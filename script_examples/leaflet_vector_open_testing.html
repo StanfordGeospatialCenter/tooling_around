@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bounding Box Coordinates</title>
+</head>
+
+<body>
+    <h1>Bounding Box Coordinates</h1>
+    <div id="coordinates"></div>
+    <script>
+        async function fetchAndPrintBounds() {
+            const url = 'https://purl.stanford.edu/zz925nt9211.xml';
+            try {
+                const response = await fetch(url);
+                const text = await response.text();
+                const parser = new DOMParser();
+                const xmlDoc = parser.parseFromString(text, 'application/xml');
+
+                const gmlNS = 'http://www.opengis.net/gml';
+
+                const lowerCorner = xmlDoc.getElementsByTagNameNS(gmlNS, 'lowerCorner')[0].textContent;
+                const upperCorner = xmlDoc.getElementsByTagNameNS(gmlNS, 'upperCorner')[0].textContent;
+
+                document.getElementById('coordinates').innerText = `
+                    Lower Corner: ${lowerCorner}
+                    Upper Corner: ${upperCorner}
+                `;
+            } catch (error) {
+                console.error('Failed to fetch bounding box coordinates', error);
+                document.getElementById('coordinates').innerText = 'Failed to fetch bounding box coordinates';
+            }
+        }
+
+        fetchAndPrintBounds();
+    </script>
+</body>
+
+</html>
