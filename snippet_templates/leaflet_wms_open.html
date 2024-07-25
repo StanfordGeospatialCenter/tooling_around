@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Leaflet WMS Map</title>
+    <title>Leaflet WMS Example</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <style>
-        #map {
-            height: 100vh;
-        }
-    </style>
-</head>
-<body>
-    <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+    <div id="map" style="width: 100%; height: 600px;"></div>
+
     <script>
-        // Configuration variables
-        const druid = "zz925nt9211";
-        const wmsEndpoint = "https://geowebservices.stanford.edu/geoserver/druid/wms";
-        const layerId = `druid:${druid}`;
+        const layer_name = "zz925nt9211";
+        const type_name = `druid:${layer_name}`;
+        const metadata_url = `https://web.stanford.edu/~maples/earthworks/stanford-${layer_name}/raw.json`;
+        const service_url = "https://geowebservices.stanford.edu/geoserver/wms";
 
-        // Initialize the map
-        const map = L.map('map');
+        fetch(metadata_url)
+            .then(response => response.json())
+            .then(data => {
+                const bbox = data.dcat_bbox.split("ENVELOPE(")[1].split(")")[0].split(",").map(Number);
+                const minX = bbox[0];
+                const maxX = bbox[1];
+                const minY = bbox[2];
+                const maxY = bbox[3];
 
-        // Add a base layer for better context
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
+                const map = L.map('map').fitBounds([[minY, minX], [maxY, maxX]]);
 
-        // Add the WMS layer
-        const wmsLayer = L.tileLayer.wms(wmsEndpoint, {
-            layers: layerId,
-            format: 'image/png',
-            transparent: true,
-            version: '1.1.0',
-            attribution: "Map data © OpenStreetMap contributors"
-        }).addTo(map);
+                // Add OpenStreetMap basemap
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
 
-        // Set the map view based on the layer's bounding box
-        const bounds = [[48.82726631203717, 2.285821781576666], [48.88755431203717, 2.4034937815766693]];
-        map.fitBounds(bounds);
+                // Add WMS layer
+                L.tileLayer.wms(service_url, {
+                    layers: type_name,
+                    format: 'image/png',
+                    transparent: true,
+                    attribution: "© Stanford"
+                }).addTo(map);
+            })
+            .catch(error => console.error('Error fetching metadata:', error));
     </script>
 </body>
+
 </html>
