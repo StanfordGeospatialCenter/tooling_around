@@ -1,0 +1,188 @@
+{
+  "description": "Direct Stanford Digital Repository Stacks URLs for cloud-optimized and web-ready derivatives of the fixture Druids.",
+  "source": "metadata/fixtures.yml",
+  "metadata_api": "https://purl.stanford.edu/{druid}.json",
+  "stacks_file_pattern": "https://stacks.stanford.edu/file/{druid}/{filename}",
+  "retrieved": "2026-08-19",
+  "records": [
+    {
+      "label": "Image - single image",
+      "druid": "bc151bq1744",
+      "purl": "https://purl.stanford.edu/bc151bq1744",
+      "formats": {
+        "iiif_manifest": "https://purl.stanford.edu/bc151bq1744/iiif/manifest",
+        "iiif_image_service_pattern": "https://stacks.stanford.edu/image/iiif/bc151bq1744%2F{image_name}"
+      },
+      "note": "The same PURL is listed for the multi-image fixture; use the manifest to enumerate canvases."
+    },
+    {
+      "label": "Image - multi-image",
+      "druid": "bc151bq1744",
+      "purl": "https://purl.stanford.edu/bc151bq1744",
+      "formats": {
+        "iiif_manifest": "https://purl.stanford.edu/bc151bq1744/iiif/manifest"
+      }
+    },
+    {
+      "label": "Index map",
+      "druid": "kh860qj3406",
+      "purl": "https://purl.stanford.edu/kh860qj3406",
+      "formats": {
+        "geojson": "https://stacks.stanford.edu/file/kh860qj3406/index_map.geojson",
+        "flatgeobuf": "https://stacks.stanford.edu/file/kh860qj3406/index_map.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/kh860qj3406/index_map.pmtiles"
+      }
+    },
+    {
+      "label": "Shapefile polygons",
+      "druid": "cr288qn9438",
+      "purl": "https://purl.stanford.edu/cr288qn9438",
+      "formats": {
+        "flatgeobuf": "https://stacks.stanford.edu/file/cr288qn9438/alameda2014.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/cr288qn9438/alameda2014.pmtiles"
+      }
+    },
+    {
+      "label": "Shapefile polygons (restricted)",
+      "druid": "bb099zb1450",
+      "purl": "https://purl.stanford.edu/bb099zb1450",
+      "access": "stanford",
+      "formats": {
+        "flatgeobuf": "https://stacks.stanford.edu/file/bb099zb1450/D31_dep.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/bb099zb1450/D31_dep.pmtiles"
+      }
+    },
+    {
+      "label": "Shapefile polygons (crosses 180 longitude)",
+      "druid": "gk831nh0251",
+      "purl": "https://purl.stanford.edu/gk831nh0251",
+      "formats": {
+        "flatgeobuf": "https://stacks.stanford.edu/file/gk831nh0251/KIR_adm0.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/gk831nh0251/KIR_adm0.pmtiles"
+      }
+    },
+    {
+      "label": "Shapefile points",
+      "druid": "bb434sw7474",
+      "purl": "https://purl.stanford.edu/bb434sw7474",
+      "formats": {
+        "flatgeobuf": "https://stacks.stanford.edu/file/bb434sw7474/gar_exp_SAU.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/bb434sw7474/gar_exp_SAU.pmtiles"
+      }
+    },
+    {
+      "label": "Shapefile points (restricted)",
+      "druid": "mx498nz6026",
+      "purl": "https://purl.stanford.edu/mx498nz6026",
+      "access": "stanford",
+      "formats": {
+        "flatgeobuf": "https://stacks.stanford.edu/file/mx498nz6026/ASSAM_POINT.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/mx498nz6026/ASSAM_POINT.pmtiles"
+      }
+    },
+    {
+      "label": "Shapefile lines",
+      "druid": "zc952cn1722",
+      "purl": "https://purl.stanford.edu/zc952cn1722",
+      "formats": {
+        "flatgeobuf": "https://stacks.stanford.edu/file/zc952cn1722/Faults_OffshoreSantaBarbara.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/zc952cn1722/Faults_OffshoreSantaBarbara.pmtiles"
+      }
+    },
+    {
+      "label": "Shapefile lines (restricted)",
+      "druid": "wn662ny6315",
+      "purl": "https://purl.stanford.edu/wn662ny6315",
+      "access": "stanford",
+      "formats": {
+        "flatgeobuf": "https://stacks.stanford.edu/file/wn662ny6315/DRAINAGE.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/wn662ny6315/DRAINAGE.pmtiles"
+      }
+    },
+    {
+      "label": "PMTiles many layers",
+      "druid": "hf224mw4004",
+      "purl": "https://purl.stanford.edu/hf224mw4004",
+      "formats": {
+        "pmtiles": "https://stacks.stanford.edu/file/hf224mw4004/20231116.pmtiles"
+      },
+      "note": "This archive is approximately 108 GiB; use HTTP range requests rather than downloading it in full."
+    },
+    {
+      "label": "GeoJSON points",
+      "druid": "nz577hv6134",
+      "purl": "https://purl.stanford.edu/nz577hv6134",
+      "formats": {
+        "geojson": "https://stacks.stanford.edu/file/nz577hv6134/samtrans_stops_20150626_20260403.geojson",
+        "flatgeobuf": "https://stacks.stanford.edu/file/nz577hv6134/samtrans_stops_20150626_20260403.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/nz577hv6134/samtrans_stops_20150626_20260403.pmtiles"
+      }
+    },
+    {
+      "label": "GeoJSON lines",
+      "druid": "yt111kw1413",
+      "purl": "https://purl.stanford.edu/yt111kw1413",
+      "formats": {
+        "geojson": "https://stacks.stanford.edu/file/yt111kw1413/samTrans_bus_routes_20151021_shapes_20260406.geojson",
+        "flatgeobuf": "https://stacks.stanford.edu/file/yt111kw1413/samTrans_bus_routes_20151021_shapes_20260406.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/yt111kw1413/samTrans_bus_routes_20151021_shapes_20260406.pmtiles"
+      }
+    },
+    {
+      "label": "GeoJSON polygons",
+      "druid": "ch787ty4618",
+      "purl": "https://purl.stanford.edu/ch787ty4618",
+      "formats": {
+        "geojson": "https://stacks.stanford.edu/file/ch787ty4618/County_Boundary.geojson",
+        "flatgeobuf": "https://stacks.stanford.edu/file/ch787ty4618/County_Boundary.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/ch787ty4618/County_Boundary.pmtiles"
+      }
+    },
+    {
+      "label": "GeoJSON points (slow to load)",
+      "druid": "qp917dm2243",
+      "purl": "https://purl.stanford.edu/qp917dm2243",
+      "formats": {
+        "geojson": "https://stacks.stanford.edu/file/qp917dm2243/Stanford_Temperature_Model_0km.geojson",
+        "flatgeobuf": "https://stacks.stanford.edu/file/qp917dm2243/Stanford_Temperature_Model_0km.fgb",
+        "pmtiles": "https://stacks.stanford.edu/file/qp917dm2243/Stanford_Temperature_Model_0km.pmtiles"
+      }
+    },
+    {
+      "label": "GeoTIFF (EPSG::32735)",
+      "druid": "bb223nv3920",
+      "purl": "https://purl.stanford.edu/bb223nv3920",
+      "formats": {
+        "cog": "https://stacks.stanford.edu/file/bb223nv3920/Pretoria_landcover_t1_cog.tif"
+      }
+    },
+    {
+      "label": "GeoTIFF (EPSG::4326, restricted)",
+      "druid": "bb021mm7809",
+      "purl": "https://purl.stanford.edu/bb021mm7809",
+      "access": "stanford",
+      "formats": {
+        "cog": "https://stacks.stanford.edu/file/bb021mm7809/MCE_FI2G_2014_cog.tif"
+      }
+    },
+    {
+      "label": "GeoTIFF (EPSG::4326, nodata configured)",
+      "druid": "kq996gp6880",
+      "purl": "https://purl.stanford.edu/kq996gp6880",
+      "formats": {
+        "cog": "https://stacks.stanford.edu/file/kq996gp6880/SF1938_cog.tif"
+      }
+    },
+    {
+      "label": "IIIF map with georeference annotation",
+      "druid": "bb013fz9675",
+      "purl": "https://purl.stanford.edu/bb013fz9675",
+      "formats": {
+        "iiif_manifest": "https://purl.stanford.edu/bb013fz9675/iiif/manifest",
+        "georeference_annotation": "https://purl.stanford.edu/bb013fz9675/iiif/annotationList/cocina-fileSet-bb013fz9675-bb013fz9675_1",
+        "jp2": "https://stacks.stanford.edu/file/bb013fz9675/bb013fz9675_0001.jp2",
+        "georeference_json": "https://stacks.stanford.edu/file/bb013fz9675/bb013fz9675_0001.json"
+      }
+    }
+  ]
+}

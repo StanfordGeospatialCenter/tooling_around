@@ -1,0 +1,49 @@
+  # Uncomment to allow sandbox to connect to sul-purl-stage
+# purl_url: "https://sul-purl-stage.stanford.edu"
+# stacks_url: "https://sul-stacks-stage.stanford.edu"
+
+stacks_storage_root: "public/file"
+
+sandbox:
+sandbox:
+  image:
+    - label: Image - single image
+      purl: bc151bq1744
+    - label: Image - multi-image
+      purl: bc151bq1744
+
+  geo:
+    - label: Index map
+      purl: kh860qj3406
+    - label: Shapefile polygons
+      purl: cr288qn9438
+    - label: Shapefile polygons (restricted)
+      purl: bb099zb1450
+    - label: Shapefile polygons (crosses 180 longitude)
+      purl: gk831nh0251
+    - label: Shapefile points
+      purl: bb434sw7474
+    - label: Shapefile points (restricted)
+      purl: mx498nz6026
+    - label: Shapefile lines
+      purl: zc952cn1722
+    - label: Shapefile lines (restricted)
+      purl: wn662ny6315
+    - label: PMTiles many layers
+      purl: hf224mw4004
+    - label: GeoJSON points
+      purl: nz577hv6134
+    - label: GeoJSON lines
+      purl: yt111kw1413
+    - label: GeoJSON polygons
+      purl: ch787ty4618
+    - label: GeoJSON points (slow to load)
+      purl: qp917dm2243
+    - label: GeoTIFF (EPSG::32735)
+      purl: bb223nv3920
+    - label: GeoTIFF (EPSG::4326, restricted)
+      purl: bb021mm7809
+    - label: GeoTIFF (EPSG::4326, 'nodata' configured)
+      purl: kq996gp6880
+    - label: IIIF map with georeference annotation
+      purl: bb013fz9675
